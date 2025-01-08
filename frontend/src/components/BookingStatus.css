@@ -1,0 +1,78 @@
+/* General styling for the Booking Status component */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  /* Container for the booking status */
+  .booking-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .booking-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .booking-card h3 {
+    margin: 0 0 8px;
+    color: #007bff;
+  }
+  
+  .booking-card p {
+    margin: 4px 0;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .booking-card strong {
+    color: #333;
+  }
+  
+  /* Styling for the "No bookings found" message */
+  p {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+    margin-top: 20px;
+  }
+  
+  /* Upload form container */
+  .upload-form {
+    margin-top: 12px;
+    padding: 12px;
+    border-top: 1px solid #eee;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .booking-card {
+      padding: 12px;
+    }
+  
+    .booking-card h3 {
+      font-size: 18px;
+    }
+  
+    .booking-card p {
+      font-size: 13px;
+    }
+  }
+  

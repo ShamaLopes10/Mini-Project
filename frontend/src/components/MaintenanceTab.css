@@ -1,0 +1,55 @@
+.maintenance-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.maintenance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.maintenance-table th,
+.maintenance-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.maintenance-table th {
+  background-color: #4ebb39;
+  font-weight: bold;
+  color: #f7f8f7;
+  text-transform: uppercase;
+}
+
+.maintenance-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.maintenance-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.requirements-column {
+  font-size: 0.9em;
+  color: #555;
+  white-space: pre-wrap;
+}
+
+.no-requests {
+  text-align: center;
+  font-size: 1.2em;
+  color: #777;
+  margin-top: 20px;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-item {
+  margin-bottom: 5px;
+}

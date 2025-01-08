@@ -1,0 +1,118 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #a8e6cf, #dcedc1);
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.login-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center text within the login box */
+}
+
+/* Logo Styling */
+.app-logo {
+  width: 120px; /* Adjust width of the logo */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.input-group input, .input-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+.input-group input:focus, .input-group select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #45a049;
+}
+
+.login-btn:active {
+  background-color: #388e3c;
+}
+
+/* Google login button styling */
+.google-login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #db4437;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.google-login-btn:hover {
+  background-color: #c1351d;
+}
+
+.google-login-btn:active {
+  background-color: #9e2e1f;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-box {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .app-logo {
+    width: 80px; /* Adjust size for small screens */
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,63 @@
+/* Navbar.css */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #19a0df;
+    padding: 10px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .app-logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+  
+  .app-logo img {
+    max-height: 70px;
+    width: auto;
+  }
+  
+  nav ul {
+    margin-left: 25%; /* Push the nav items to the right */
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .app-logo {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-bottom: 10px;
+    }
+  }
+  

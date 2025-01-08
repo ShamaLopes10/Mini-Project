@@ -1,0 +1,206 @@
+/* General Layout */
+.calendar-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f6f9;
+    min-height: 100vh;
+    box-sizing: border-box;
+    width: 100%; /* Increased viewport width */
+    margin: 0 auto; /* Center the component */
+}
+
+.calendar-component h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Calendar Styling */
+.react-calendar {
+    width: 100%;
+    max-width: 800px;
+    border: 2px solid #1f66cb; /* Coloured border around the calendar */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #4f9ab7;
+    color: rgb(12, 12, 12);
+    
+    overflow: auto; /* Prevent clipping */
+    /* border: 1px solid #ced4da; */
+    
+}
+
+
+.react-calendar__tile {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.react-calendar__tile:hover {
+    background-color: #e8f5e9;
+    transform: scale(1.05);
+}
+
+/* Holidays (Sundays and Odd Saturdays) */
+.react-calendar__tile.holiday {
+    background-color: #fff;
+    color: #f00c0c;
+    font-weight: bold;
+    border: 1px solid #ced4da;
+}
+
+/* Marking holidays text in red */
+.react-calendar__tile.holiday span {
+    color: rgb(100, 97, 97);
+}
+
+/* Styling for No Event or Holiday Days */
+.react-calendar__tile.no-event-day {
+    background-color: #fff; /* Light Gray */
+    color: #171717; /* Medium Gray Text */
+    border: 1px solid #ced4da;
+    font-weight: normal;
+}
+
+/* Days with Events */
+/* .react-calendar__tile.event-day {
+    background-color: #c78282;
+    color: #388e3c;
+    font-weight: bold;
+    border: 1px solid #a5d6a7;
+} */
+
+/* Days with Events */
+.react-calendar__tile.event-day {
+    background-color: #44e55f; /* Yellow for events */
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #cde4da;
+}
+
+/********************************/
+/* Styling for Weekday Bar */
+.react-calendar__month-view__weekdays {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #aacdef; /* Light gray background */
+    border-bottom: 2px solid #dee2e6; /* Subtle border for separation */
+    font-weight: bold;
+    color: #343a40; /* Dark text color for better contrast */
+    text-transform: uppercase; /* Make weekdays uppercase */
+    font-size: 1rem; /* Increase font size for visibility */
+    border: 1px solid #121212;
+}
+
+/* Styling for individual weekday tiles */
+.react-calendar__month-view__weekdays__weekday {
+    flex: 1;
+    text-align: center;
+    color: #212529; /* Slightly darker gray for clarity */
+}
+
+/* Upcoming Events Section */
+.selected-date-events {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.selected-date-events h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    background-color: #f9fbe7;
+}
+
+.event-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.event-card h4 {
+    margin-bottom: 5px;
+    color: #2c25b0;
+    font-size: 1.2rem;
+}
+
+.event-card p {
+    margin: 3px 0;
+    font-size: 0.9rem;
+    color: #312c2c;
+}
+
+.error {
+    color: rgb(75, 72, 72);
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.modal {
+    position: fixed; /* Ensures the modal is fixed relative to the viewport */
+    top: 50%; /* Centers the modal vertically */
+    left: 50%; /* Centers the modal horizontally */
+    transform: translate(-50%, -50%); /* Centers the modal using translation */
+    z-index: 1000; /* Ensures the modal appears above all other elements */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    width: 400px; /* Set a fixed width */
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dimmed background */
+    z-index: 999; /* Place it below the modal */
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calendar-component {
+        padding: 10px;
+    }
+
+    .react-calendar {
+        width: 100%;
+    }
+
+    .selected-date-events {
+        padding: 15px;
+    }
+}

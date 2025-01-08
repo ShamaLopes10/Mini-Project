@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+.logo-container {
+    flex: 0; /* Keeps the logo fixed */
+}
+
+.logo {
+    width: 1px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+}

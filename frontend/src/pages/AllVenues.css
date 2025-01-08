@@ -1,0 +1,28 @@
+.all-venues {
+    padding: 20px;
+}
+
+.all-venues h1 {
+    text-align: center;
+}
+
+.all-venues table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.all-venues th, .all-venues td {
+    border: 1px solid #504f4f;
+    padding: 8px;
+    text-align: left;
+}
+
+.all-venues th {
+    background-color: #12c418;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}

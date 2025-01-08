@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7f9; /* Light blue background */
+}
+
+/* Header with Logo */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #4caf91; /* Light green */
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #eafaf4; /* Soft white */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d0fff1; /* Lighter green for hover */
+}
+
+/* Calendar Container */
+.calendar-container {
+  max-width: 90%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Calendar Tile */
+.react-calendar {
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.react-calendar__tile {
+  background-color: #f5fdfd; /* Light blue tile background */
+  color: #4caf91; /* Light green text */
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.react-calendar__tile:hover {
+  background-color: #c8f2e6; /* Light green hover effect */
+  color: #ffffff; /* White text */
+}
+
+.react-calendar__tile--active {
+  background-color: #4caf91; /* Active tile color */
+  color: white;
+  font-weight: bold;
+}
+
+/* Highlight for Holidays */
+.holiday {
+  background-color: #ffebcc !important; /* Soft yellow for holidays */
+  color: #fdfdfd !important; /* Soft red text for holidays */
+  /* border-radius: 50%; */
+  font-weight: bold;
+}
+
+/* Events List */
+.events-list {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e8f9f3; /* Light green background */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.events-list h2 {
+  color: #31867f; /* Darker green for headings */
+}
+
+.events-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.events-list li {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #ffffff; /* White background for events */
+  border: 1px solid #cce6e4; /* Light green border */
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.events-list li:hover {
+  background-color: #e6f9f2; /* Slight green hover */
+}
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #4caf91; /* Light green */
+  color: white;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #eafaf4; /* Soft white */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
